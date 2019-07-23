@@ -1,0 +1,3 @@
+js_dev/plugins/*.js
+*.min.js
+node_modules/

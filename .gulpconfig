@@ -1,0 +1,29 @@
+module.exports = {
+
+    "css": [ // compiles Sass to CSS + autoprefixes CSS + minifies CSS
+        {
+            "src"  : "src/styles/",
+            "dest" : "webroot/assets/styles/"
+        }
+    ],
+    "js": [ // lints JS + transpiles ES6 to ES5 + uglifies JS
+        {
+            "src"  : "src/scripts/",
+            "dest" : "webroot/assets/scripts/"
+        }
+    ],
+    "img": [ // compresses images (nearly losslessly)
+        {
+            "src"  : "src/images/",
+            "dest" : "webroot/assets/images/"
+        }
+    ],
+
+    "settings": {
+        "minifyCSS"   : true,
+        "sourcemapCSS": true,
+        "minifyJS"    : true,
+        "lintJS"      : true,
+        "smartFind"   : false // if "true", finds "js_dev/" and "sass/" dirs and compiles to adjacent "js/" and "css/" dirs
+    }
+};

@@ -1,0 +1,43 @@
+{
+  "name": "eric-comstock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-external-helpers": "^6.8.0",
+    "babel-preset-env": "^1.2.1",
+    "eslint": "^3.3.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.7",
+    "gulp-wait": "0.0.2",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "pump": "^1.0.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "webpack": "^2.4.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "author": "awade <alexbwade@gmail.com>",
+  "license": "ISC"
+}

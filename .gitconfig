@@ -1,0 +1,36 @@
+[user]
+	name = ecomstock
+	email = ecomstock@gmail.com
+[alias]
+	unstage = reset HEAD --
+	undo = revert
+	co = checkout
+	br = branch
+	ci = commit
+	cit = commit -t .git-commit-template.txt
+	st = status
+	mg = merge
+	mgnf = merge --no-ff
+	df = diff
+	dc = diff --cached
+	sortdiff = !sh -c 'git diff "$@" | grep "^[+-]" | sort --key=1.2 | uniq -u -s1'
+	ls = ls-tree
+	cl = clone
+	logg = log --graph --decorate --oneline --abbrev-commit --all
+	hist = log --graph --full-history --all --pretty=format:'%Cred%h%Creset %Cgreen(%ad)%Creset %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+	last = log -1 --stat
+[core]
+	trustctime = false
+	editor = vim
+	filemode = false
+	autocrlf = true
+[color]
+	ui = true
+	[merge]
+	tool = vimdiff
+[mergetool]
+	keeptemporaries = false
+	keepbackups = false
+	prompt = false
+	trustexitcode = false

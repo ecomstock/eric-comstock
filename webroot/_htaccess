@@ -1,0 +1,11 @@
+
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteCond %{HTTP_HOST} !^(dev|localhost|test)\.
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# HTTPS rewrite handled by Cloudflare
+
+Options -Indexes
+ErrorDocument 404 /404.php
