@@ -2,7 +2,7 @@
   "name": "mortgage-calculator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "eric-comstock.com/mortgage-calculator/",
+  "homepage": "eric-comstock.com/mortgage-calculator",
   "dependencies": {
     "@material-ui/core": "^4.4.1",
     "react": "^16.9.0",
